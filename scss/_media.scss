@@ -9,16 +9,30 @@
 }
 
 @media (max-width: 780px) {
+  #home-d .container .section-detail {
+    padding: 0;
+    display: inline-block;
+  }
+
+  // #home-a .container .specials {
+  //   grid-template-columns: repeat(4, 1fr);
+  // }
+
+  #home-c .container .feedback {
+    grid-template-columns: 1fr;
+  }
+
   #home-e .form-section {
     grid-template-columns: 1fr;
 
     img {
+      height: 100%;
       width: 100%;
     }
   }
 
   #home-header {
-    height: 62rem;
+    height: 100%;
     border-bottom: 2px solid $main-color;
     padding: 0;
 
@@ -39,6 +53,7 @@
 
       .bio-image img {
         width: 100%;
+        height: 100%;
       }
 
       div:first-child {
