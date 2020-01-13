@@ -1,0 +1,340 @@
+@import "config";
+@import "utilities";
+
+//Genaral styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../font/OpenSans-Light.ttf");
+}
+
+body {
+  font-family: Open Sans;
+  line-height: 1.6;
+  background: white;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 20em;
+  height: 25em;
+}
+
+//home page
+.home-landing {
+  background: $background-color;
+}
+
+#home-header {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    justify-content: center;
+    box-sizing: border-box;
+    line-height: 1.3;
+    padding: 12rem 6rem 13rem 6rem;
+  }
+
+  .container .bio .landing {
+    font-size: 3rem;
+  }
+
+  .container .bio h1 {
+    font-family: auto;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+
+  .container .bio .description {
+    margin: 3rem 0;
+    font-size: 21px;
+  }
+
+  .container .bio .button-description {
+    font-family: auto;
+    font-size: 11px;
+    margin-left: 13px;
+    margin-top: 7px;
+    color: #b5b5b5;
+  }
+
+  .container .bio .buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: .5rem;
+  }
+
+  .container .bio .buttons .dark {
+    display: inline-block;
+    background-color: #1873ee;
+    color: #fff;
+    text-decoration: none;
+    font-family: auto;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 13px 20px;
+    outline: 0;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 11rem;
+  }
+
+  .container .bio .buttons .dark:hover {
+    background-color: #2180ff;
+
+  }
+
+  .container .bio .buttons .light {
+    display: inline-block;
+    color: $main-color;
+    text-decoration: none;
+    font-family: auto;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 11px 15px;
+    outline: 0;
+    border-radius: 10px;
+    border: 1.5px solid $main-color;
+    cursor: pointer;
+    width: 7rem;
+  }
+
+  .container .bio-image {
+    text-align: center;
+  }
+
+}
+
+#home {
+  &-a {
+    .specials {
+      margin-top: 5rem;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: 20% 20% 20% 20%;
+      justify-content: center;
+
+      .fas {
+        color: $main-color;
+      }
+
+      p {
+        font-family: auto;
+        font-size: 14px;
+        color: #b5b5b5;
+      }
+    }
+  }
+
+  &-b {
+    background: $main-color;
+    margin-top: 5rem;
+
+    .stats {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: 20% 20% 20% 20%;
+      justify-content: center;
+      margin: 1.5rem 0;
+      color: #fff;
+
+      li {
+        line-height: 1.5;
+
+        &.stats-number {
+          font-family: auto;
+          font-size: 2rem;
+          font-weight: 600;
+        }
+
+        &.stats-title {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  &-c {
+    background: linear-gradient(rgba(255, 255, 255, .2), rgba(255, 255, 255, .9)),
+      url("../img/glasses.jpg") no-repeat center;
+
+    .feedback {
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+
+      .left-side {
+        text-align: left;
+        padding: 6rem;
+
+        .comma {
+          font-style: italic;
+          color: #b5b5b5;
+          font-family: auto;
+          font-size: 50px;
+          margin-bottom: -38px;
+        }
+
+        .data {
+          font-style: italic;
+          color: #b5b5b5;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 1.8;
+          margin-bottom: 25px;
+        }
+
+        .person {
+          font-family: auto;
+          font-weight: 700;
+        }
+
+        .person-title {
+          color: $main-color;
+          font-weight: 600;
+        }
+      }
+
+      .right-side {
+        text-align: left;
+        padding: 6rem;
+
+        .comma {
+          font-style: italic;
+          color: #b5b5b5;
+          font-family: auto;
+          font-size: 50px;
+          margin-bottom: -38px;
+        }
+
+        .data {
+          font-style: italic;
+          color: #b5b5b5;
+          font-size: 15px;
+          font-weight: 700;
+          line-height: 1.8;
+          margin-bottom: 25px;
+        }
+
+        .person {
+          font-family: auto;
+          font-weight: 700;
+        }
+
+        .person-title {
+          color: $main-color;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &-d {
+    margin-bottom: 7rem;
+
+    .section-detail {
+      display: flex;
+      padding-left: 8rem;
+
+      .message {
+        text-align: left;
+        padding-left: 3rem;
+        padding-top: 1rem;
+
+        .designation {
+          color: $main-color;
+          margin-top: -16px;
+          margin-bottom: 2rem;
+        }
+
+        .sayings {
+          line-height: 1.6;
+          color: #b5b5b5;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &-e {
+    background: $main-color;
+    color: #fff;
+
+    .form-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 4rem;
+      justify-content: center;
+      box-sizing: border-box;
+      line-height: 1.3;
+      margin-bottom: 6rem;
+    }
+
+    .form-data {
+      border: 2px solid white;
+      box-sizing: border-box;
+      border-radius: 10px;
+      text-align: left;
+      margin-top: 0;
+      padding: 2rem;
+
+      input[type=text] {
+        display: block;
+        padding: 14px 6px;
+        margin: 0px 0px 12px 0px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        width: 100%;
+        border: none;
+        outline: none;
+      }
+
+      input[type=email] {
+        display: block;
+        padding: 14px 6px;
+        margin: 0px 0px 12px 0px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        width: 100%;
+        border: none;
+        outline: none;
+      }
+
+      .yellow {
+        display: inline-block;
+        margin-top: 1em;
+        background-color: #dfdf00;
+        color: #fff;
+        text-decoration: none;
+        font-family: auto;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 1rem;
+        width: 92%;
+        outline: 0;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@import 'media'

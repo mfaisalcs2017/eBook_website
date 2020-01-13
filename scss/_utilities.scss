@@ -1,0 +1,61 @@
+.container {
+  max-width: $website-width;
+  padding: 0 2rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-top: 5rem;
+}
+
+//padding
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+
+  &-2 {
+    padding: 2rem 0;
+  }
+
+  &-3 {
+    padding: 3rem 0;
+  }
+
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+//margin
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+
+  &-2 {
+    margin: 2rem 0;
+  }
+
+  &-3 {
+    margin: 3rem 0;
+  }
+
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+.bottom-line {
+  height: 3px;
+  width: 3rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
